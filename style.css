@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background-color: #292933;
+    color: white; */
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.container{
+    background-color:white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: "100%";
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    /* background-color:yellow; */
+}
+.app-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: "100%";
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-wrap: break-word;
+    align-items: flex-start;
+    width: "100%";
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.website_group{
+    word-break:inherit;
+}
+.email,.website{
+    text-decoration: underline;
+    color: #2196f3
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+}
